@@ -12,7 +12,8 @@ const Home = () => {
       width={"100%"}
       height={"100%"}
       sx={{
-        backgroundColor: '#0aeeea'
+        backgroundColor: '#000000',
+        opacity: 0.9
       }}
     >
       <Grid item sm={8} mt={10}>
@@ -32,12 +33,12 @@ const Home = () => {
             variant="contained"
             size="large"
             sx={{
-              backgroundColor: "#FFB82E",
+              backgroundColor: "red",
               px: "20px",
               py: "10px",
               fontSize: "48px",
               ":hover": {
-                backgroundColor: "#FFB82E",
+                backgroundColor: "red",
                 opacity: 0.8,
               },
             }}

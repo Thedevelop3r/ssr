@@ -4,7 +4,8 @@ import { Card, CardContent, Typography } from "@mui/material";
 const HotelCards = ({ name, rooms_number, city, telephone }) => {
   return (
     <Card sx={{
-        width: "310px"
+        width: "310px",
+        backgroundColor: "#000000"
     }}>
       <CardContent sx={{
         gap: "10px"
@@ -19,7 +20,7 @@ const HotelCards = ({ name, rooms_number, city, telephone }) => {
         <Typography variant="body1" color="primary.light">
           City: {city}
         </Typography>
-        <Typography variant="body1" color="body1">
+        <Typography variant="body1" color="red">
           Tellephon: {telephone}
         </Typography>
       </CardContent>

@@ -11,6 +11,7 @@ const Addusers = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPass] = useState("");
+  const [persmission, setPermission] = useState("");
   const [warning, setWarning] = useState("");
 
   return (
@@ -32,7 +33,7 @@ const Addusers = () => {
           gap: "30px",
           width: "30%",
           padding: "60px",
-          backgroundColor: "#eaeaea",
+          backgroundColor: "#000000",
           alignItems: "center",
         }}
       >
@@ -74,6 +75,20 @@ const Addusers = () => {
           type={"password"}
           onChange={(e) => {
             setPass(e.target.value);
+          }}
+        />
+        <TextField
+          variant="outlined"
+          label="Permission"
+          placeholder="user role?"
+          sx={{
+            backgroundColor: "#FFF",
+          }}
+          value={persmission}
+          required
+          // type={"password"}
+          onChange={(e) => {
+            setPermission(e.target.value);
           }}
         />
         <Typography variant="body1" color="error.light">

@@ -30,6 +30,10 @@ const Login = () => {
       justifyContent={"space-around"}
       width={"100%"}
       height={"100%"}
+      sx={{
+        backgroundColor: "#000000",
+        opacity: 0.9
+      }}
     >
         <Typography variant="h2" color="primary">LOGIN</Typography>
       <FormControl
